@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Kotto One', serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  background-color: #1a1a1a;
+
+
+}
+
+/* Fixed Top Bar (Transparent Text-Only Nav) */
+header {
+  position: fixed;
+  top: 0;
+  right: 50px;
+  width: 95%;
+  background-color: transparent;
+  /* gray-black */
+  
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+
+}
+
+.logo {
+  font-style: italic;
+  font-size: 1rem;
+  color: white;
+  /* Keep it readable over image */
+}
+
+nav button {
+
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  margin-left: 20px;
+  cursor: pointer;
+  font-style: italic;
+  padding: 0;
+}
+
+nav button:hover {
+  text-decoration: underline;
+}
+
+
+.section {
+  padding: 120px 40px 80px;
+  min-height: 100vh;
+  color: white;
+}
+
+/* Home section */
+.hero {
+  background: url('home.jpg') no-repeat center center/cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.content {
+  position: absolute;
+  left: 900px;
+  right: 100px;
+  text-align: right;
+  z-index: 1;
+}
+
+.poem {
+  margin-top: 20px;
+  line-height: 2;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
+
+}
+.about {
+  background-color: #1a1a1a;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 100px 40px;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: right;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.image-wrapper {
+  position: relative;
+  width: fit-content;
+  margin-bottom: 30px;
+}
+
+.hiking-photo {
+  position: relative;
+  right: 400px;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+.portrait {
+  position: absolute;
+  top: 70px;
+  right: 250px;
+  width: 330px;
+  height: 360px;
+  border-radius: 50%;
+  border: 2px solid white;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+.text {
+  position: absolute;
+  left: 900px;
+  max-width: 500px;
+  margin-top: 60px; 
+  line-height: 2;
+  
+
+}
+
+.text h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  
+}
+
+/* Hiking section */
+.hiking {
+  text-align: center;
+}
+
+
+.scroll-buttons {
+  position: absolute;
+  top: 107em;
+  display: flex;
+  flex-direction: row;
+  gap: 3em;
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  width: auto;
+  margin: 2em auto;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10px;
+  scrollbar-width: none;
+}
+.scroll-buttons button {
+  min-width: 140px;
+  background: #222;
+  border: none;
+  border-radius: 12px;
+  padding: 0.5em 0.5em 0.7em 0.5em;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1em;
+}
+.scroll-buttons button:hover {
+  background: #388e3c;
+}
+.scroll-img-btn {
+  width: 450px; 
+  height: 330px;
+  object-fit: cover;
+  border-radius: 50px;
+  margin-bottom: 0.5em;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  
+  transition: border 0.2s;
+}
+.scroll-buttons button:hover .scroll-img-btn {
+  border: 2px solid #fff;
+}
